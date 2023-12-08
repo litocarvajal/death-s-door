@@ -38,6 +38,7 @@ header{
 header .menu{
     position: fixed;
     right: 0px;
+    background-color: rgba(0, 0, 0, 0.522);
 }
 
 header .menu ul{
