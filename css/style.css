@@ -55,6 +55,8 @@ header .menu ul li:hover{
     background-color: #ffffff88;
     padding: 16px;
     transition: padding 0.2s ease-in;
+    border-radius: 20%;
+
 }
 
 header .menu ul li a{
@@ -148,7 +150,6 @@ header img{
 /* Videos */
 
 .videos{
-
     background-image: url("../img/background-dark.webp");
     display: flex;
     justify-content: space-evenly;
@@ -214,16 +215,23 @@ footer img{
 footer a{
     text-decoration: none;
     color: #fff;
+    height: 100%;
 }
 
 footer .rrss{
     color: #fff;
 }
 
-footer .rrss i{
+footer .rrss a i{
     padding: 8px;
 }
 
+footer .rrss a i:hover{
+    background-color: #ffffff88;
+    border-radius: 20%;
+    color: black;
+    transition: background-color 0.2s ease-in;
+}
 
 
 /* Media Query */
