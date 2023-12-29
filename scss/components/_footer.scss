@@ -1,0 +1,31 @@
+/* Footer */
+footer{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    padding: 16px;
+    background-color: #0b0b0b;
+    img{
+        width:100px;
+    }
+    a{
+        text-decoration: none;
+        color: #fff;
+        height: 100%;
+    }
+    .rrss{
+        color: #fff;
+        a{
+            i{
+                padding: 8px;
+                border-radius:50%;
+                transition: background-color 0.2s ease-in;
+                &:hover{
+                    filter: drop-shadow(0 0 1rem rgb(214, 214, 214));
+                }
+            }
+        }
+    }
+}

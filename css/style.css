@@ -10,19 +10,19 @@
     box-sizing: border-box;
 }
 
+
 h3{
     font-size: 2.5em;
     font-weight: 300;
 }
-h4{
-    font-size: 1.2em;
-    color: #fff;
-    font-weight: 200;
-}
+
 
 i{
     font-size: 2em;
 }
+
+
+
 
 /* Header */
 
@@ -31,8 +31,27 @@ header{
     flex-direction: row;
     justify-content: space-between;
     align-items: center;
-    background-color: rgba(11,11,12);
+    background-color: #000;
     padding: 0 32px;
+    position: sticky;
+    top: 0;
+    width: 100%;
+    animation: scrollnav linear both;
+    animation-timeline: view();
+    animation-range: entry 0% cover 100%;
+}
+
+
+/* Keyframes */
+
+@keyframes scrollnav{
+    from {
+        background-color: #000000;
+    }
+    to {
+        background-color: #00000079;
+    }
+    
 }
 
 header .menu ul{
@@ -48,20 +67,22 @@ header .menu ul li{
     text-decoration: none;
     list-style: none;
     color: #fff;
-    padding: 8px 16px;
+    padding: 4px 16px;
+    border-radius: 4px;
     transition: padding 0.2s ease-in;
 }
 
 header .menu ul li:hover{
-    background-color: #ffffff88;
-    padding: 16px;
-    border-radius: 20%;
+    padding: 8px 16px;
+    border-bottom: 3px solid #fff;
+    filter: drop-shadow(0 0 1rem rgb(255, 255, 255));
 
 }
 
 header .menu ul li a{
     text-decoration: none;
     color: #fff;
+    text-shadow: #000;
 }
 
 
@@ -92,7 +113,7 @@ header img{
     background-image: url("../img/fondo.png");
     background-position: center;
     width: 100%;
-    height: 100vh;
+    height: 90vh;
     object-fit: cover;
     background-repeat: no-repeat;
 }
@@ -102,15 +123,20 @@ header img{
     transition: width 0.2s ease-in;
 }
 
+.hero img:hover{
+    width: 420px
+}
+
 
 /* Description */
 
 .description{
+    background-color: #fffcdf;
     display: flex;
     justify-content: space-evenly;
     align-items: center;
     flex-wrap: wrap;
-    margin: 2em;
+    padding: 2em;
 } 
 
 /* .description{
@@ -131,16 +157,19 @@ header img{
 
 .description .texto p{
     font-size: 1em;
-    font-weight: 200;
+    font-weight: 300;
 }
 
 
 .description .texto h3{
+    font-size: 2.5em;
+    font-weight: 300;
     width: 100%;
     margin-bottom: 0.5em;
 }
 
 .description div img{
+    border-radius: 8px;
     width: 100%;
     height: 100%;
     object-fit: cover;
@@ -160,11 +189,34 @@ header img{
     object-fit: cover;
 }
 
+.videos .cabeceravideos{
+    display: flex;
+    flex-direction: row;
+}
+
+.videos .crowl, .crowr{
+    width: 42px;
+    background-repeat: no-repeat;
+    background-position: center;
+    filter: drop-shadow(0 0 0.8rem 000);
+}
+
+.videos .crowl{
+    background-image: url("../img/crowr.svg");
+}
+
+.videos .crowr{
+    background-image: url("../img/crowl.svg");
+}
+
+
 .videos h3{
+    font-size: 2.5em;
+    font-weight: 300;
     color: #fff;
     text-align: center;
     width: 100%;
-    margin: 16px 32px;
+    margin: 16px;
 }
 
 /* .videos .lista-videos{
@@ -188,12 +240,20 @@ header img{
     display: flex;
     flex-direction: column;
     justify-content: center;
-    align-items: center;
+    text-align: center;
+    border-radius: 8px;
     margin: 16px;
 }
 
+.videos .lista-videos .contenido-video iframe{
+    border-radius: 8px 8px 0 0;
+}
+
 .videos .lista-videos .contenido-video h4{
-    margin-top: 16px;
+    margin: 16px 0 16px 0;
+    font-size: 1.2em;
+    color: #fff;
+    font-weight: 300;
 }
 
 
@@ -224,13 +284,12 @@ footer .rrss{
 
 footer .rrss a i{
     padding: 8px;
+    border-radius:50%;
+    transition: background-color 0.2s ease-in;
 }
 
 footer .rrss a i:hover{
-    background-color: #ffffff88;
-    border-radius: 20%;
-    color: black;
-    transition: background-color 0.2s ease-in;
+    filter: drop-shadow(0 0 1rem rgb(255, 255, 255));
 }
 
 
@@ -276,13 +335,9 @@ footer .rrss a i:hover{
         flex-direction: column;
     }
 
-    .hero img{
-        width: 320px;
-        transition: width 0.2s ease-out;
-    }
-
-
     footer{
         justify-content: center;
     }
 }
+
+
