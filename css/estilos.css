@@ -424,9 +424,10 @@ footer {
     grid-template-rows: auto;
     grid-template-areas: "titulo-videos" "lista-videos"; }
     .videos .titulo-videos {
-      padding: 1em; }
-      .videos .titulo-videos h3 {
-        font-size: 1.2em; }
+      padding: 1em;
+      /*             h3 {
+                font-size: 1.2em;
+            } */ }
     .videos .lista-videos {
       margin: 0; }
     .videos .imagen-video {
@@ -442,13 +443,5 @@ footer {
         height: auto; } }
 
 @media screen and (max-width: 576px) {
-  /*  header{
-        .menu{
-            text-align: center;
-            ul{
-                flex-direction: column;
-            }
-        }
-    } */
   footer {
     justify-content: center; } }
