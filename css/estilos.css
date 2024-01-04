@@ -423,6 +423,12 @@ footer {
     grid-template-columns: 100%;
     grid-template-rows: auto;
     grid-template-areas: "titulo-videos" "lista-videos"; }
+    .videos .titulo-videos {
+      margin: 0; }
+      .videos .titulo-videos .crowl {
+        margin-right: 0; }
+      .videos .titulo-videos .crowr {
+        margin-left: 0; }
     .videos .lista-videos {
       margin: 0; }
     .videos .imagen-video {

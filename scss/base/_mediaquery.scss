@@ -24,7 +24,15 @@
         grid-template-areas:
         "titulo-videos"
         "lista-videos";
-        
+        .titulo-videos{
+            margin: 0;
+            .crowl{
+                margin-right: 0;
+            }
+            .crowr{
+                margin-left: 0;
+            }
+        }
         .lista-videos{
             margin: 0;
         }
