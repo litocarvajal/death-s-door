@@ -60,7 +60,7 @@
                         text-shadow: #000;
                     }
 
-                    &:hover {
+                &:hover {
                         backdrop-filter: blur(2px);
                         background: linear-gradient(90deg, rgba(0, 0, 0, 0) 20%, rgba(0, 0, 0, 0.1966036414565826) 50%, rgba(0, 0, 0, 0) 80%);
                         filter: drop-shadow(0 0 1rem rgb(214, 214, 214));
@@ -68,7 +68,7 @@
                             margin: 0 1em;
                             opacity: 1;
                         }
-                    }
+                }
 
                 }
 
