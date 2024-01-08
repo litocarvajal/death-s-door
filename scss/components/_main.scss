@@ -280,6 +280,8 @@
     align-items: center;
     width: 100%;
     background-color: #fffcdf;
+    background-image: url("../img/background-dark.webp");
+    background-blend-mode: difference;
 
     .fun-img {
         display: flex;
