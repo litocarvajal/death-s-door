@@ -6,13 +6,13 @@ header {
     flex-direction: row;
     justify-content: space-between;
     align-items: center;
-    background-color: #000;
+    background-color: #1a1a1a;
     width: 100%;
 
     a {
         img {
             padding: 1em;
-            width: 100px;
+            width: 200px;
         }
 
         &:hover {

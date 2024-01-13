@@ -67,17 +67,40 @@
         width: 100%;
        
         .armas {
+            .titulo-armas{
+                h4{
+                    text-align: center;
+                }
+            }
 
             .img-gif {
+                width: 90%;
+                margin: 1rem;
 
-                grid-template-columns: 1fr;
-                grid-template-areas:
-                "img";
+                flex-direction: column;
 
-                img {
+                .arm-texto{
+                    grid-area: arm-texto;
+                    flex-direction: column-reverse;
+                    p{
+                        text-align: center;
+                        width: 100%;
+                    }
+                    .poder-armas{
+                        width: 100%;
+                        .car-armas{
+                            flex-wrap: nowrap;
+                        }
+                    }
+                }
+
+                .imagenes {
+                    flex-direction: column;
                     margin: 1em;
-                    width: 360px;
                     height: auto;
+                    img{
+                        width: 100%;
+                    }
                 }
             }
         }
@@ -87,6 +110,45 @@
 
 
 @media screen and (max-width:576px){
+
+    .funciones{
+        .contenedor-armas{
+            width: 100%;
+           
+            .armas {
+                .titulo-armas{
+                    h4{
+                        text-align: center;
+                    }
+                }
+    
+                .img-gif {
+                    
+                    .arm-texto{
+                       
+                        .poder-armas{
+                        
+                            .car-armas{
+                                flex-wrap: wrap;
+                            }
+                        }
+                    }
+
+                    .imagenes{
+                        width: auto;
+                    }
+    
+                  
+                }
+            }
+        }
+    }
+    
+
+
+
+
+
 
     footer{
         justify-content: center;

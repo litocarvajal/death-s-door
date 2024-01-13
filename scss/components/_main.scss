@@ -139,7 +139,6 @@
 
 
 .videos {
-    padding: 0 10%;
     background-image: url("../img/background-dark.webp");
 
     display: grid;
@@ -150,54 +149,65 @@
         "lista-videos imagen-video"
         "lista-videos .";
 
-
-    .titulo-videos {
-        display: flex;
-        flex-direction: row;
-        justify-content: center;
-        margin: 0 2rem;
+    .vid-img {
         grid-area: titulo-videos;
-        backdrop-filter: blur(2px);
-        background: linear-gradient(90deg, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 0.8016456582633054) 50%, rgba(0, 0, 0, 0) 100%);
+        background-image: url("../img/fondo-videos.jpg");
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 100%;
+        height: 200px;
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+        
+        .titulo-videos {
+            display: flex;
+            flex-direction: row;
+            justify-content: center;
+            margin: 0 2rem;
+            grid-area: titulo-videos;
+            backdrop-filter: blur(2px);
+            background: linear-gradient(90deg, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 0.8016456582633054) 50%, rgba(0, 0, 0, 0) 100%);
 
-        .crowl {
-            background-image: url("../img/tituloi.svg");
-            width: 100px;
-            margin-right: 40px;
-            background-repeat: no-repeat;
-            background-position: center;
-            filter: drop-shadow(2px 2px rgba(0, 0, 0, 0.5));
-        }
+            .crowl {
+                background-image: url("../img/tituloi.svg");
+                width: 100px;
+                margin-right: 40px;
+                background-repeat: no-repeat;
+                background-position: center;
+                filter: drop-shadow(2px 2px rgba(0, 0, 0, 0.5));
+            }
 
-        .crowr {
-            background-image: url("../img/titulod.svg");
-            width: 100px;
-            margin-left: 40px;
-            background-repeat: no-repeat;
-            background-position: center;
-            filter: drop-shadow(2px 2px rgba(0, 0, 0, 0.5));
-        }
+            .crowr {
+                background-image: url("../img/titulod.svg");
+                width: 100px;
+                margin-left: 40px;
+                background-repeat: no-repeat;
+                background-position: center;
+                filter: drop-shadow(2px 2px rgba(0, 0, 0, 0.5));
+            }
 
-        h3 {
-            font-family: 'Forum', serif;
-            padding: 0.5em;
-            border-bottom: 2px solid transparent;
-            border-image: linear-gradient(90deg, rgba(255, 255, 255, 0) 0%, rgba(255, 255, 255, 0.5019257703081232) 50%, rgba(255, 255, 255, 0) 100%);
-            text-transform: uppercase;
-            border-image-slice: 1;
+            h3 {
+                font-family: 'Forum', serif;
+                padding: 0.5em;
+                border-bottom: 2px solid transparent;
+                border-image: linear-gradient(90deg, rgba(255, 255, 255, 0) 0%, rgba(255, 255, 255, 0.5019257703081232) 50%, rgba(255, 255, 255, 0) 100%);
+                text-transform: uppercase;
+                border-image-slice: 1;
 
-            font-size: 2em;
-            font-weight: 400;
-            text-align: center;
-            text-decoration: none;
-            color: #fff;
-            text-shadow: #000;
+                font-size: 3em;
+                font-weight: 400;
+                text-align: center;
+                text-decoration: none;
+                color: #fff;
+                text-shadow: #000;
+            }
         }
     }
-
     .lista-videos {
         grid-area: lista-videos;
-        margin: 16px;
+        margin: 2rem;
 
         .contenido-video {
             display: flex;
@@ -208,7 +218,8 @@
             margin: 16px;
 
             &:hover {
-                filter: drop-shadow(0 0 1rem rgba(255, 255, 255, 0.5));
+                filter: drop-shadow(0 0 1rem rgba(255, 255, 255, 0.251));
+                cursor: pointer;
             }
 
             iframe {
@@ -256,22 +267,22 @@
         padding: 20px 0;
 
         span {
-            filter: drop-shadow(2px 2px rgba(0, 0, 0, 0.5));
+            filter: drop-shadow(1px 1px rgba(0, 0, 0, 0.8)) opacity(80%);
         }
 
         .imagen {
             border-radius: 50% 50% 0 0;
-            border: 8px solid #ffffffb0;
+            border: 1rem ridge #ffffff95;
             display: flex;
             justify-content: center;
-            align-items: end;
-            background-color: #ffffff50;
+            align-items: flex-end;
+            background-color: #ffffff63;
             overflow: visible;
             width: 50%;
             height: 100%;
 
             img {
-                filter: drop-shadow(2px 2px 8px rgba(255, 255, 255, 0.5));
+                filter: drop-shadow(1px 1px 2px rgba(0, 0, 0, 0.853)) contrast(120%);
                 width: 500px;
             }
         }
@@ -392,6 +403,7 @@
                     font-weight: 400;
                     text-decoration: none;
                     color: #fff;
+                    
                 }
 
 
@@ -443,7 +455,7 @@
                             text-transform: uppercase;
                             border-image-slice: 1;
 
-                            img {
+                            .img {
                                 filter: drop-shadow(2px 1px 4px rgba(0, 0, 0, 0.151));
                                 padding: 0.5em;
                                 width: auto;
