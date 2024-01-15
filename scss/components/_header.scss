@@ -8,6 +8,7 @@ header {
     align-items: center;
     background-color: #1a1a1a;
     width: 100%;
+    padding: 0 1rem;
 
     a {
         img {
@@ -26,6 +27,7 @@ header {
             display: flex;
             flex-direction: row;
             align-items: center;
+            margin: 0;
 
             li {
                 font-family: 'Roboto Condensed', sans-serif;
