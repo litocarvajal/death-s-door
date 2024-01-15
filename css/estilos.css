@@ -560,11 +560,12 @@ header {
         padding: 2rem; }
         .funciones .con-articulo .articulo .card-noticias .card-t,
         .noticias .con-articulo .articulo .card-noticias .card-t {
+          min-height: 590px;
           grid-area: cardt;
           display: flex;
           flex-direction: column;
           flex-wrap: nowrap;
-          justify-content: center;
+          justify-content: start;
           width: 438px;
           background-color: #fffcdf;
           transition: all 0.3s ease-out; }
