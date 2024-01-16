@@ -217,7 +217,7 @@ header {
     height: 200px;
     background-position: center;
     background-repeat: no-repeat;
-    background-size: cover; }
+    background-size: auto; }
     .videos .vid-img .titulo-videos {
       display: flex;
       flex-direction: row;
@@ -341,7 +341,7 @@ header {
     height: 200px;
     background-position: center;
     background-repeat: no-repeat;
-    background-size: cover; }
+    background-size: auto; }
     .funciones .fun-img .titulo-funciones,
     .funciones .art-img .titulo-funciones,
     .noticias .fun-img .titulo-funciones,
@@ -448,7 +448,7 @@ header {
             padding: 1rem 2rem;
             font-size: 1.25rem;
             color: #fff;
-            width: 64%;
+            width: 60%;
             margin: 0; }
           .funciones .contenedor-armas .armas .img-gif .arm-texto .poder-armas,
           .noticias .contenedor-armas .armas .img-gif .arm-texto .poder-armas {
@@ -459,7 +459,7 @@ header {
             display: flex;
             flex-direction: row;
             flex-wrap: nowrap;
-            width: 36%;
+            width: 40%;
             border-radius: 20px; }
             .funciones .contenedor-armas .armas .img-gif .arm-texto .poder-armas .img-armas,
             .noticias .contenedor-armas .armas .img-gif .arm-texto .poder-armas .img-armas {
@@ -625,41 +625,42 @@ header {
   object-fit: cover;
   background-repeat: no-repeat;
   background-position: bottom; }
-  .figuras .art-fig .titulo-figuras {
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    margin: 0 2rem;
-    width: 100%;
-    backdrop-filter: blur(2px);
-    background: linear-gradient(90deg, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 0.801646) 50%, rgba(0, 0, 0, 0) 100%); }
-    .figuras .art-fig .titulo-figuras .crowl {
-      background-image: url("../img/tituloi.svg");
-      width: 100px;
-      margin-right: 40px;
-      background-repeat: no-repeat;
-      background-position: center;
-      filter: drop-shadow(2px 2px rgba(0, 0, 0, 0.5)); }
-    .figuras .art-fig .titulo-figuras .crowr {
-      background-image: url("../img/titulod.svg");
-      width: 100px;
-      margin-left: 40px;
-      background-repeat: no-repeat;
-      background-position: center;
-      filter: drop-shadow(2px 2px rgba(0, 0, 0, 0.5)); }
-    .figuras .art-fig .titulo-figuras h3 {
-      font-family: 'Forum', serif;
-      padding: 0.5em;
-      border-bottom: 2px solid transparent;
-      border-image: linear-gradient(90deg, rgba(255, 255, 255, 0) 0%, rgba(255, 255, 255, 0.501926) 50%, rgba(255, 255, 255, 0) 100%);
-      text-transform: uppercase;
-      border-image-slice: 1;
-      font-size: 3em;
-      font-weight: 400;
-      text-align: center;
-      text-decoration: none;
-      color: #fff;
-      text-shadow: #000; }
+  .figuras .art-fig {
+    width: 100%; }
+    .figuras .art-fig .titulo-figuras {
+      display: flex;
+      flex-direction: row;
+      justify-content: center;
+      margin: 0 2rem;
+      backdrop-filter: blur(2px);
+      background: linear-gradient(90deg, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 0.801646) 50%, rgba(0, 0, 0, 0) 100%); }
+      .figuras .art-fig .titulo-figuras .crowl {
+        background-image: url("../img/tituloi.svg");
+        width: 100px;
+        margin-right: 40px;
+        background-repeat: no-repeat;
+        background-position: center;
+        filter: drop-shadow(2px 2px rgba(0, 0, 0, 0.5)); }
+      .figuras .art-fig .titulo-figuras .crowr {
+        background-image: url("../img/titulod.svg");
+        width: 100px;
+        margin-left: 40px;
+        background-repeat: no-repeat;
+        background-position: center;
+        filter: drop-shadow(2px 2px rgba(0, 0, 0, 0.5)); }
+      .figuras .art-fig .titulo-figuras h3 {
+        font-family: 'Forum', serif;
+        padding: 0.5em;
+        border-bottom: 2px solid transparent;
+        border-image: linear-gradient(90deg, rgba(255, 255, 255, 0) 0%, rgba(255, 255, 255, 0.501926) 50%, rgba(255, 255, 255, 0) 100%);
+        text-transform: uppercase;
+        border-image-slice: 1;
+        font-size: 3em;
+        font-weight: 400;
+        text-align: center;
+        text-decoration: none;
+        color: #fff;
+        text-shadow: #000; }
 
 /* Footer */
 footer {
@@ -766,6 +767,14 @@ footer {
           width: 100%; } }
 
 @media screen and (max-width: 576px) {
+  .funciones .fun-img .titulo-funciones {
+    margin: 0; }
+    .funciones .fun-img .titulo-funciones .crowl {
+      margin-right: 0; }
+    .funciones .fun-img .titulo-funciones .crowr {
+      margin-left: 0; }
+    .funciones .fun-img .titulo-funciones h3 {
+      font-size: 2rem; }
   .funciones .contenedor-armas {
     width: 100%; }
     .funciones .contenedor-armas .armas .titulo-armas h4 {
@@ -774,5 +783,13 @@ footer {
       flex-wrap: wrap; }
     .funciones .contenedor-armas .armas .img-gif .imagenes {
       width: auto; }
+  .videos .vid-img .titulo-videos {
+    margin: 0; }
+    .videos .vid-img .titulo-videos .crowl {
+      margin-right: 0; }
+    .videos .vid-img .titulo-videos .crowr {
+      margin-left: 0; }
+    .videos .vid-img .titulo-videos h3 {
+      font-size: 2rem; }
   footer {
     justify-content: center; } }

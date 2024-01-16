@@ -159,7 +159,7 @@
         height: 200px;
         background-position: center;
         background-repeat: no-repeat;
-        background-size: cover;
+        background-size: auto;
         
         .titulo-videos {
             display: flex;
@@ -316,7 +316,7 @@
         height: 200px;
         background-position: center;
         background-repeat: no-repeat;
-        background-size: cover;
+        background-size: auto;
 
         .titulo-funciones {
             display: flex;
@@ -430,7 +430,7 @@
                         padding: 1rem 2rem;
                         font-size: 1.25rem;
                         color: #fff;
-                        width: 64%;
+                        width: 60%;
                         margin: 0;
                     }
 
@@ -442,7 +442,7 @@
                         display: flex;
                         flex-direction: row;
                         flex-wrap: nowrap;
-                        width: 36%;
+                        width: 40%;
                         border-radius: 20px;
 
                         .img-armas {
@@ -649,6 +649,7 @@
     background-position: bottom;
 
     .art-fig{
+        width: 100%;
 
         .titulo-figuras {
             display: flex;
@@ -656,7 +657,7 @@
             justify-content: center;
            
             margin: 0 2rem;
-            width: 100%;
+            // width: 100%;
             backdrop-filter: blur(2px);
             background: linear-gradient(90deg, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 0.8016456582633054) 50%, rgba(0, 0, 0, 0) 100%);
 

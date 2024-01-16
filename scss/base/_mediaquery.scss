@@ -112,6 +112,22 @@
 @media screen and (max-width:576px){
 
     .funciones{
+        .fun-img{
+            .titulo-funciones{
+                margin: 0;
+                .crowl{
+                    margin-right: 0;
+                }
+                .crowr{
+                    margin-left: 0;
+                }
+                h3{
+                    font-size: 2rem;
+                }
+
+            }
+
+        }
         .contenedor-armas{
             width: 100%;
            
@@ -143,7 +159,24 @@
             }
         }
     }
-    
+    .videos{
+        .vid-img{
+            .titulo-videos{
+                margin: 0;
+                .crowl{
+                    margin-right: 0;
+                }
+                .crowr{
+                    margin-left: 0;
+                }
+                h3{
+                    font-size: 2rem;
+                }
+
+
+            }
+        }
+    }
 
 
 
